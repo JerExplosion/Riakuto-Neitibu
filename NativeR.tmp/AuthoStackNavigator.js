@@ -20,7 +20,7 @@ export function AuthoStackNavigatorFunc() {
        
       <AuthoStack.Screen name = {'Bar'} component = {SignInViewController} />
        <AuthoStack.Screen name = {'Articles'} component = {AListViewController} />
-       <AuthoStack.Screen name = {'DetailedScreen'} component = {DetailedViewController} />
+       {/* <AuthoStack.Screen name = {'DetailedScreen'} component = {DetailedViewController} /> */}
 
       </AuthoStack.Navigator>
 
