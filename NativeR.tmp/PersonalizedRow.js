@@ -3,7 +3,7 @@
 import React from 'react';
 import {Image, StyleSheet,Text, View }from 'react-native';
 
-const PersonalizedRow = ({descriptionText, titleText, imageURL}) => (
+const PersonalizedRow = ({descriptionText, titleText, imageURL, keyyy}) => (
 
     <View style = { styles.container} >
         <Image source = {{uri: imageURL}} style = {styles.picStyle} />    

@@ -7,7 +7,7 @@ const PersonalizedFlatListView = ( {listOfItems} ) => (
    <View style = { styles.containerStyle}>
        <FlatList 
        data = { listOfItems }
-       renderItem = { ({item}) => 
+       renderItem = { ({listOfItems}) => 
        <PersonalizedRow
         titleText = {listOfItems.titleText}
         descriptionText = {listOfItems.descriptionText}
