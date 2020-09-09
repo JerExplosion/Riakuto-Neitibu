@@ -5,11 +5,12 @@ import React from 'react';
 import {NavigationContainer} from '@react-navigation/native'
 import {createStackNavigator} from '@react-navigation/stack'
 import { StyleSheet, Text, View } from 'react-native';
-import { SignInViewController } from './InSign';
+import { SignInViewController } from './SignInViewController';
 import { AListViewController } from './AListViewController'
 import { DetailedViewController } from './DetailedViewController'
 
-import App from './APIFetcher';
+import App from './FetcherViewController';
+import FetcherViewController from './FetcherViewController';
 
 const AuthoStack = createStackNavigator();
 
@@ -19,10 +20,11 @@ export function AuthoStackNavigatorFunc() {
       <AuthoStack.Navigator screenOptions = {
         {headerShown: true}
       }>
-       
-      <AuthoStack.Screen name = {'API'} component = {App} />  {/* 有待修改 */}
-
+      
       <AuthoStack.Screen name = {'Bar'} component = {SignInViewController} />
+      <AuthoStack.Screen name = {'API'} component = {FetcherViewController} />  
+
+      {/* <AuthoStack.Screen name = {'Bar'} component = {SignInViewController} /> */}
        <AuthoStack.Screen name = {'Articles'} component = {AListViewController} />
        {/* <AuthoStack.Screen name = {'DetailedScreen'} component = {DetailedViewController} /> */}
 

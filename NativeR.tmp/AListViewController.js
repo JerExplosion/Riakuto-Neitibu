@@ -38,7 +38,7 @@
 
 import { StatusBar } from 'expo-status-bar';
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, FlatList } from 'react-native';
+import { StyleSheet, Text, View, FlatList, TouchableOpacity} from 'react-native';
 import { HeaderExtensionFunc } from './HeaderExtension';
 import { InputerFunc } from './Inputer';
 import { ButNoonFunc } from './ButNoon';

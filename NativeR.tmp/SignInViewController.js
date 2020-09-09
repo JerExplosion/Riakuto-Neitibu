@@ -2,7 +2,7 @@
 
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import { HeaderExtensionFunc } from './HeaderExtension';
 import { InputerFunc } from './Inputer';
 import { ButNoonFunc } from './ButNoon';
@@ -24,7 +24,7 @@ export function SignInViewController({navigation}) {
 
         <ButNoonFunc bTitle = {'Sign In'} bStyle = {styles.signInButton} 
         onPress = {() => {
-            navigation.navigate('Articles');
+            navigation.navigate('API');
           }}  
         />
 
