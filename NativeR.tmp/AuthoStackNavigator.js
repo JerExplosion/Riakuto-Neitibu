@@ -9,6 +9,8 @@ import { SignInViewController } from './InSign';
 import { AListViewController } from './AListViewController'
 import { DetailedViewController } from './DetailedViewController'
 
+import App from './APIFetcher';
+
 const AuthoStack = createStackNavigator();
 
 export function AuthoStackNavigatorFunc() {
@@ -18,6 +20,8 @@ export function AuthoStackNavigatorFunc() {
         {headerShown: true}
       }>
        
+      <AuthoStack.Screen name = {'API'} component = {App} />  {/* 有待修改 */}
+
       <AuthoStack.Screen name = {'Bar'} component = {SignInViewController} />
        <AuthoStack.Screen name = {'Articles'} component = {AListViewController} />
        {/* <AuthoStack.Screen name = {'DetailedScreen'} component = {DetailedViewController} /> */}

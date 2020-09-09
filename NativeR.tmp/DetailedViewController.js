@@ -9,6 +9,8 @@ export function DetailedViewController() {
   return (
     <View style={styles.container}>
 
+      <Text>Detailed Screen</Text>
+
      <HeaderExtensionFunc> Signing In </HeaderExtensionFunc> 
 
     </View>
