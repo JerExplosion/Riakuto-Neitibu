@@ -28,12 +28,14 @@ class FetcherViewController extends React.Component {
         return(
             <View style = {styles.container}>
   
-                <FlatList data = {this.state.data}
+                <FlatList 
+                ItemSeparatorComponent = {this.FlatItemSeparator} //why ain't this working though?
+                
+                data = {this.state.data}
                 renderItem = { ({item}) => <Text style = {styles.flatTextStyle}> 
                 {item.title} {'('}{item.releaseYear}{')'} </Text>}
                 />
                 
-
             </View>
         )
     }
@@ -44,6 +46,18 @@ const Item = ({title}) => (
       <Text style = {styles.titleStyle}>{title}</Text>
     </View>
 );
+
+const FlatItemSeparator = () => {
+    return (
+      <View
+        style={{
+          height: 1,
+          width: "100%",
+          backgroundColor: "#000",
+        }}
+      />
+    );
+  }
 
 // function Item({ title }) {
 //     return (

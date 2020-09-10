@@ -11,6 +11,7 @@ import { DetailedViewController } from './DetailedViewController'
 
 import App from './FetcherViewController';
 import FetcherViewController from './FetcherViewController';
+import RestaurSearchViewController from './viewControllers/RestaurSearchViewController';
 
 const AuthoStack = createStackNavigator();
 
@@ -20,11 +21,12 @@ export function AuthoStackNavigatorFunc() {
       <AuthoStack.Navigator screenOptions = {
         {headerShown: true}
       }>
+
+      {/* <AuthoStack.Screen name = {'Restaur'} component = {RestaurSearchViewController} /> */}
       
       <AuthoStack.Screen name = {'Bar'} component = {SignInViewController} />
       <AuthoStack.Screen name = {'API'} component = {FetcherViewController} />  
 
-      {/* <AuthoStack.Screen name = {'Bar'} component = {SignInViewController} /> */}
        <AuthoStack.Screen name = {'Articles'} component = {AListViewController} />
        {/* <AuthoStack.Screen name = {'DetailedScreen'} component = {DetailedViewController} /> */}
 
