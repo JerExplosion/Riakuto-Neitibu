@@ -44,6 +44,8 @@ const styles = StyleSheet.create({
     }
 })
 
+// Filtered List Component 
+
 
 export const FilteredList = ({title, results, navigation}) =>{
 
