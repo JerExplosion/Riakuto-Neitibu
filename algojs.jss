@@ -46,5 +46,33 @@ function stringReversalDos(targetStr) {
 }    
 
 
+// MARK: - 
+// MARK: - 
+
+let cleaninThyRoom = function() {
+    return new Promise(function(resolve, reject) {
+        resolve('cleanin it right now, chill')
+    });
+} 
+
+let throwinoutThyTrash = function(someMessage) {
+    return new Promise(function(resolve, reject) {
+        resolve(someMessage + " threw out y'all's trash")
+    });
+}
+
+cleaninThyRoom().then(function(resultMessage) {
+    return throwinoutThyTrash(resultMessage)
+}).then(function(resultMessage) {
+    console.log(' done with this crap ' + resultMessage)
+}) 
+
+
+
+
+
+
+
+
 
 
