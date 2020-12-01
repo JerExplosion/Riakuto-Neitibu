@@ -27,4 +27,24 @@ function duplicatesDetection(targetStr) {
  }
  
  
- 
+
+// MARK: - 
+
+function stringReversalUno(targetStr) {
+    var resultStr = "";
+    const leng = targetStr.length;
+    for (index = leng-1; index >= 0; index --) {
+        resultStr += targetStr[index]                                      
+    };
+    document.write(resultStr);
+    console.log(resultStr);
+}
+          
+function stringReversalDos(targetStr) {
+    const resultStr = targetStr.split("").reverse().join("");
+    console.log(resultStr)
+}    
+
+
+
+
